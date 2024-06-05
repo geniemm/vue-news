@@ -1,8 +1,8 @@
 <template>
   <div class="header">
-    <router-link to="/news">News</router-link> | 
-    <router-link to="/ask">Ask</router-link> | 
-    <router-link to="/jobs">Jobs</router-link>
+    <router-link to="/news" class="header-text">News</router-link> | 
+    <router-link to="/ask" class="header-text">Ask</router-link> | 
+    <router-link to="/jobs" class="header-text">Jobs</router-link>
 </div>
 </template>
 
@@ -17,7 +17,10 @@ export default {
     color:white;
     background-color: #42b883;
     display: flex;
-    padding: 8px;
+    padding: 10px;
+  }
+  .header-text {
+    padding: 0 5px;
   }
   .header .router-link-exact-active {
     color:#35495e;
